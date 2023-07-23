@@ -1,10 +1,25 @@
 import './FooterStyles.css'
 
+
 import {FaHome, FaInstagram, FaLinkedin, FaMailBulk, FaPhone, FaTwitter} from "react-icons/fa"
 import React from 'react';
 
+const PhoneNumberLink = ({ phoneNumber }) => {
+    const handlePhoneNumberClick = () => {
+      window.location.href = `tel:${phoneNumber}`;
+    };
+  
+    return (
+      <a href={`tel:${phoneNumber}`} onClick={handlePhoneNumberClick}>
+        {phoneNumber}
+      </a>
+    );
+  };
+
+
 const Footer = () => {
-    const emailAddress = 'example@example.com';
+    const emailAddress = 'sofiyatgbadamosi@gmail.com';
+    const phoneNumber = '+234-708-864-3717';
     const subject = 'Hello from My Website';
     const body = 'Hi there,';
     const twitterProfileUrl = 'https://twitter.com/SofiyatG';
@@ -22,8 +37,9 @@ const Footer = () => {
                 </div>
                 <div className='phone'>
                     <h4>
-                        <FaPhone size={20} style={{color: "#fff", marginRight: "2rem"}} /> +234-708-864-3717
-                       
+                        <FaPhone size={20} style={{color: "#fff", marginRight: "2rem"}} /> 
+                        <PhoneNumberLink phoneNumber={phoneNumber} />
+
                     </h4>                
                     </div>
                 <div className='email'>
