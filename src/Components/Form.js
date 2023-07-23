@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 import "./FormStyles.css"
 
 import React from 'react';
 
 const Form = () => {
     return <div className="form">
-        <form action="./contact">
+        <form>
             <label>Your Name</label>
             <input type="text"></input>
             <label>Email</label>
@@ -13,7 +14,7 @@ const Form = () => {
             <input type="text"></input>
             <label>Message</label>
             <textarea rows="6" placeholder="Type your message here" />
-            <button className="btn">Submit</button>
+            <Link to="/contact" className="btn">Submit</Link>
         </form>
     </div>;
 }
