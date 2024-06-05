@@ -9,7 +9,7 @@ const SoftImage = () => {
             <img className='img01' src={img01} alt='SoftImg'/>
         </div>
         <div className='content'>
-            <p>HI, I'M A FULLSTACK</p>
+            <p>HI, I'M A FRONTEND</p>
             <h1>Web Developer.</h1>
             <div>
                     <Link to= "/project" className='btn'>Pojects</Link>
