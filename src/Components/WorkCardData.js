@@ -10,7 +10,7 @@ const ProjectCardData =[
         title:"A Large Scale Restaurant",
         text:"Eat and order your delicious food made with luxurious ingredients, served in unique presentations.",
         view:"https://elliesfood.netlify.app",
-    }
+    },
     {
         imgsrc: img04,
         title:"A Programming-based Quiz",
