@@ -1,7 +1,7 @@
 import './FooterStyles.css'
 
 
-import {FaHome, FaInstagram, FaLinkedin, FaMailBulk, FaPhone, FaTwitter} from "react-icons/fa"
+import {FaGithub, FaHome, FaInstagram, FaLinkedin, FaMailBulk, FaPhone, FaTwitter} from "react-icons/fa"
 import React from 'react';
 
 const PhoneNumberLink = ({ phoneNumber }) => {
@@ -25,6 +25,7 @@ const Footer = () => {
     const twitterProfileUrl = 'https://twitter.com/SofiyatG';
     const linkedinProfileUrl = 'https://www.linkedin.com/in/gbadamosi-sofiyat-73104a224/'
     const instagramProfileUrl = 'https://www.instagram.com/gbadamosisofiyat/'
+    const githubProfileUrl = "https://github.com/Sofiyat1"
     return <div className='footer'>
         <div className='footer-container'>
             <div className='left'>
@@ -63,6 +64,9 @@ const Footer = () => {
                 </a>
                 <a href={instagramProfileUrl} target="_blank" rel="noopener noreferrer">
                 <FaInstagram size={30} style={{color: "#fff", marginRight: "1rem"}} />
+                </a>
+                <a href={githubProfileUrl} target="_blank" rel="noopener noreferrer">
+                <FaGithub size={30} style={{color: "#fff", marginRight: "1rem"}} />
                 </a>
             </div>
             </div>

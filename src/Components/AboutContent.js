@@ -12,8 +12,9 @@ const AboutContent = () => {
     return <div className="about">
         <div className="left">
             <h1>Who Am I?</h1>
-            <p>Hi, I'm Sofiyat. I'm a Front-end Web developer.
-                I create responsive secure websites using Html, Css, Javascript, Reactjs and Php. Let's talk business!
+            <p>Hi, I'm Sofiyat. I'm a Frontend Web developer.
+                I create standard and responsive websites using Html, Css, Javascript and Reactjs. Providing you with 
+                a distinct and beautiful UI that meets respective sites' demand. Let's talk business!
             </p>
             <Link to = "/contact">
                 <button className="btn">Contact</button>
